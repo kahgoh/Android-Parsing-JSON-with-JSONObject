@@ -9,7 +9,6 @@ import java.io.InputStreamReader;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONTokener;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -123,6 +122,14 @@ public class JsonSampleActivity extends Activity {
 		}
 	}
 
+	/**
+	 * Creates a row for the table based on an observation. 
+	 * 
+	 * @param item
+	 * 			the JSON object containing the observation
+	 * @return the created row
+	 * @throws JSONException
+	 */
 	private View createRow(JSONObject item) throws JSONException {
 		View row = getLayoutInflater().inflate(R.layout.rows, null);
 		((TextView) row.findViewById(R.id.localTime)).setText(item
