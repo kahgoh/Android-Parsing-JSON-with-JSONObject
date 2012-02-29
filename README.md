@@ -8,4 +8,4 @@ See also (Parsing JSON with JSONObject)[http://kahdev.wordpress.com/2012/02/19/a
 
 Acknowledgements
 ================
-The sample JSON data was taken from the Bureau of Meteorology [(http://www.bom.gov.au)](http://www.bom.gov.au).
+The sample JSON data was taken from the Bureau of Meteorology ([http://www.bom.gov.au](http://www.bom.gov.au)).
