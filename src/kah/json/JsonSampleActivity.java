@@ -19,7 +19,9 @@ import android.widget.TableLayout;
 import android.widget.TextView;
 
 /**
- * An activity that parses the sample Json data from the Bureau of Meteorology (http://www.bom.gov.au) and displays it in a table on the screen.
+ * An activity that parses the sample Json data from the Bureau of Meteorology
+ * (http://www.bom.gov.au) and displays it in a table on the screen, using
+ * {@link JSONObject}.
  * 
  * @author Kah
  */
@@ -58,7 +60,7 @@ public class JsonSampleActivity extends Activity {
 
 		downloadThread.start();
 	}
-	
+
 	/**
 	 * Loads the sample JSON data into a table.
 	 * 
@@ -104,7 +106,7 @@ public class JsonSampleActivity extends Activity {
 	 * Populates the table in the main view with data.
 	 * 
 	 * @param data
-	 * 			the read JSON data
+	 *            the read JSON data
 	 * @throws JSONException
 	 */
 	private void populateTable(JSONObject data) throws JSONException {
@@ -123,10 +125,10 @@ public class JsonSampleActivity extends Activity {
 	}
 
 	/**
-	 * Creates a row for the table based on an observation. 
+	 * Creates a row for the table based on an observation.
 	 * 
 	 * @param item
-	 * 			the JSON object containing the observation
+	 *            the JSON object containing the observation
 	 * @return the created row
 	 * @throws JSONException
 	 */
